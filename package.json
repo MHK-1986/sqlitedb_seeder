@@ -1,0 +1,30 @@
+{
+  "name": "sqlitedb_seeder_cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "db:up": "sequelize db:migrate",
+    "db:undo": "sequelize db:migrate:undo",
+    "seed:undo": "sequelize db:seed:undo",
+    "db:down": "sequelize db:migrate:undo:all",
+    "db:migrate": "sequelize db:migrate",
+    "db:rollback": "sequelize db:migrate:undo",
+    "db:rollback:all": "sequelize db:migrate:undo:all",
+    "db:seeder": "sequelize seed:generate --name products",
+    "db:seed": "sequelize db:seed:all",
+    "db:refresh": "npm run db:down && npm run db:up && npm run db:seed ",
+    "db:fresh": "npm run db:down && npm run db:up"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "lodash.times": "^4.3.2"
+  },
+  "dependencies": {
+        "@faker-js/faker": "^8.1.0",
+        "sequelize": "^6.35.1",
+        "sqlite3": "^5.1.6"
+      }
+}
