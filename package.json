@@ -4,6 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
+    
     "db:up": "sequelize db:migrate",
     "db:undo": "sequelize db:migrate:undo",
     "seed:undo": "sequelize db:seed:undo",
@@ -11,10 +12,11 @@
     "db:migrate": "sequelize db:migrate",
     "db:rollback": "sequelize db:migrate:undo",
     "db:rollback:all": "sequelize db:migrate:undo:all",
-    "db:seeder": "sequelize seed:generate --name products",
+    "db:seeder": "sequelize seed:generate --name ",
     "db:seed": "sequelize db:seed:all",
     "db:refresh": "npm run db:down && npm run db:up && npm run db:seed ",
-    "db:fresh": "npm run db:down && npm run db:up"
+    "db:fresh": "npm run db:down && npm run db:up",
+    "make:migration": "sequelize migration:generate --name "
   },
   "author": "",
   "license": "ISC",

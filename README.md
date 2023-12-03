@@ -2,31 +2,44 @@
 ```shell
 $ npm install
 ```
-### NOTE
-*   See details in ***package.json*** file about the action performed by following shell commands. 
-
+### Create tables in database
+Any change made in databse structure or seeder 
 ```shell
-$ npm run db:up 
-
-$ npm run db:undo
-
-$ npm run seed:undo
-
+$ npm run db:up
+```
+### Remove tables in database
+Any change made in databse structure or seeder 
+```shell
 $ npm run db:down
-
+```
+### Update change in migration
+Modify database schema
+```shell
 $ npm run db:migrate
+```
 
-$ npm run db:rollback
+### Create Migration 
+Any change made in databse structure or seeder 
+```shell
+$ npm run make:migration  # require  {name of migration e.g User}
+```
+### Create Seeder 
+Any change made in databse structure or seeder 
+```shell
+$ npm run db:seeder  # require  {name of seeder e.g userSeeder}
+```
 
-$ npm run db:rollback:all
-
-$ npm run db:seeder
-
-$ npm run db:seed
-
+### Remove all data and Seed Back all data
+Any change made in databse structure or seeder 
+```shell
 $ npm run db:refresh
 
-$ npm run db:fresh
+```
 
+### Seed all seeders
+Any change made in databse structure or seeder 
+```shell
+$ npm run db:seed
 
 ```
+
