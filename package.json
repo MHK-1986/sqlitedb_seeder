@@ -4,7 +4,6 @@
   "description": "",
   "main": "",
   "scripts": {
-    
     "db:up": "sequelize db:migrate",
     "db:undo": "sequelize db:migrate:undo",
     "seed:undo": "sequelize db:seed:undo",
