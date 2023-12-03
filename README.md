@@ -2,27 +2,27 @@
 *   See details in ***package.json*** file about the action performed by following shell commands. 
 
 ```shell
-$ npm tun db:up 
+$ npm run db:up 
 
-$ npm tun db:undo
+$ npm run db:undo
 
-$ npm tun seed:undo
+$ npm run seed:undo
 
-$ npm tun db:down
+$ npm run db:down
 
-$ npm tun db:migrate
+$ npm run db:migrate
 
-$ npm tun db:rollback
+$ npm run db:rollback
 
-$ npm tun db:rollback:all
+$ npm run db:rollback:all
 
-$ npm tun db:seeder
+$ npm run db:seeder
 
-$ npm tun db:seed
+$ npm run db:seed
 
-$ npm tun db:refresh
+$ npm run db:refresh
 
-$ npm tun db:fresh
+$ npm run db:fresh
 
 
 ```

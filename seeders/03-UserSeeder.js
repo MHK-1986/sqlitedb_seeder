@@ -10,10 +10,13 @@ module.exports = {
 };
 
 function userSeeder() {
-    const users = times(10, (user) => ({
-        username: faker.person.firstName(),
-        password: "12345", // 12345
-    }))
+    const users = [
+        { 'usernamr': 'tim', 'password': 'tim123' },
+        { 'usernamr': 'kate', 'password': 'kate123' }
+    ]
+
+
+    
 
     return users
 }
