@@ -1,24 +1,8 @@
 {
-  "use_env_variable":{
-    
-  },
+
   "development": {
-   "storage": "./explorelocal.sqlite",
+   "storage": "./explorelocal.db",
     "dialect": "sqlite"
-  },
-  
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "",
-    "host": "127.0.0.1",
-    "dialect": ""
-  },
-  "production": {
-    "username": "root",
-    "password": null,
-    "database": "",
-    "host": "127.0.0.1",
-    "dialect": ""
   }
 }
+  

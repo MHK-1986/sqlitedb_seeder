@@ -1,3 +1,7 @@
+### Instal Node packages
+```shell
+$ npm install
+```
 ### NOTE
 *   See details in ***package.json*** file about the action performed by following shell commands. 
 
