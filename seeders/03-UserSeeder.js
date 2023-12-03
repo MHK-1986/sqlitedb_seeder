@@ -1,22 +1,17 @@
-const { faker } = require('@faker-js/faker');
-const times = require('lodash.times')
+
 module.exports = {
     async up(queryInterface, sequelize) {
-        await queryInterface.bulkInsert("business_users", userSeeder())
+        await queryInterface.bulkInsert("business_users", businessUserSeeder())
     },
     async down(queryInterface, Sequelize) {
         await queryInterface.bulkDelete("business_users", null, {});
     }
 };
 
-function userSeeder() {
-    const users = [
+function businessUserSeeder() {
+    const business_users = [
         { 'username': 'tim', 'password': 'tim123' },
         { 'username': 'kate', 'password': '12345' }
     ]
-
-
-    
-
-    return users
+    return business_users
 }
