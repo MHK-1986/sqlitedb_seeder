@@ -15,7 +15,7 @@ function localBusinessSeeder() {
         type: faker.commerce.productAdjective(),
         country: faker.location.country(), 
         region:faker.location.city(),
-        lon:faker.location.latitude({ max: 10, min: -10, precision: 5 }),
+        lon:faker.location.longitude({ max: 10, min: -10, precision: 5 }),
         lat:faker.location.latitude({ max: 10, min: -10, precision: 5 }),
         description:faker.lorem.sentence({ min: 3, max: 5 }),
         recommendations:faker.number.int(10),
